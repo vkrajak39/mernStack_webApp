@@ -4,7 +4,7 @@ const mongoose= require('mongoose');
 const app = express();
 
 
-//database connection
+//************  database connection
 dotenv.config({path:"./config.env"});
 
 
@@ -27,8 +27,11 @@ const PORT = process.env.PORT;      //hiding port number to keep data secure
 require("./db/conn");   //requiring the above mentioned db connection code
 
 
+//******* user schema ********/
+// const User = require('./model/userSchema');
 
-//middleware
+
+//****************** middleware ********/
 
 const middleware = (req,res,next)=>{
     console.log("hello from middleware");
