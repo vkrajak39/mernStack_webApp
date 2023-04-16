@@ -30,6 +30,23 @@ require("./db/conn");   //requiring the above mentioned db connection code
 //******* user schema ********/
 // const User = require('./model/userSchema');
 
+//**linking our router file to ake routing easy */
+
+app.use(express.json());
+
+app.use(require("./router/auth"));
+
+
+
+
+
+
+
+
+
+
+
+
 
 //****************** middleware ********/
 
